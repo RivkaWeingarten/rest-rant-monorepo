@@ -7,7 +7,7 @@ const { User } = db
 
      
   
-router.post('/login', async (req, res) => {
+router.post('/', async (req, res) => {
     
     let user = await User.findOne({
         where: { email: req.body.email }
